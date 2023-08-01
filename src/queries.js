@@ -10,7 +10,7 @@ export const urlClient = createClient({
 export const queryRecommendedProfiles = `
 query RecommendedProfiles {
     recommendedProfiles {
-             id
+        id
         name
         bio
         attributes {
