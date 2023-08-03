@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import {urlClient, LENS_HUB_CONTRACT_ADDRESS, queryRecommendedProfiles, queryExplorePublications} from "./queries";
-import LENSHUB from "./lenshub";
+import LENSHUB from "./lensHub";
 import { ethers } from "ethers";
 import { Box, Button, Image } from "@chakra-ui/react";
 
-function App() {
+function Home() {
   const [account, setAccount] = useState(null); 
   const [profiles, setProfiles] = useState([]);
   const [posts, setPosts] = useState([]);
@@ -191,4 +191,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
