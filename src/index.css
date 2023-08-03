@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
 html,
-body{
-    padding:0;
-    margin:0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
-img{
-    max-width: none !important;
-    border-radius: 50%;
+img {
+  max-width: none !important;
+  border-radius: 50%;
 }
 
-.app{
-    background: url("./images/gadientImage-2.png") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.app {
+  background: url("./assets/gradientimage-4.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
