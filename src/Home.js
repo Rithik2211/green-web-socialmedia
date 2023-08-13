@@ -3,6 +3,7 @@ import {urlClient, LENS_HUB_CONTRACT_ADDRESS, queryRecommendedProfiles, queryExp
 import LENSHUB from "./lensHub";
 import { ethers } from "ethers";
 import { Box, Button, Image } from "@chakra-ui/react";
+import ProfilePage from './profilePage';
 
 function Home() {
   const [account, setAccount] = useState(null); 
@@ -74,14 +75,8 @@ function Home() {
       {/* NAVBAR */}
       <Box width="100%" backgroundColor="rgba(5, 32, 64, 28)">
         <Box display="flex" justifyContent="space-between" alignItems="center" width="55%" margin="auto" color="white" padding="10px 0">
-        <Image
-            alt="follow-icon"
-            src="/4.png"
-            width="100px"
-            height="100px"
-            marginLeft='-19rem'
-          />
-          <Box marginLeft='-47rem'>
+        <Image alt="Green Web Symbol" src="/4.png" width="100px" height="100px" marginLeft='-190px' />
+          <Box marginLeft='-6rem'>
             <Box fontFamily="DM Serif Display" fontSize="50px"> GREEN WEB </Box>
             <Box fontSize="20px"> A Decentralized SocialMedia </Box> 
           </Box>
@@ -94,6 +89,10 @@ function Home() {
               Connect Wallet
             </Button>
           )}
+          <Box>
+            <ProfilePage/>
+            <h2 style={{marginLeft: "1.4rem"}}>PROFILE</h2>
+          </Box>
         </Box>
       </Box>
 
