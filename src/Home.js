@@ -2,25 +2,12 @@ import { useEffect, useState } from "react";
 import {urlClient, LENS_HUB_CONTRACT_ADDRESS, queryRecommendedProfiles, queryExplorePublications} from "./queries";
 import LENSHUB from "./lensHub";
 import { ethers } from "ethers";
-import { Box, Button, Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import ProfilePage from './profilePage';
 
-function Home() {
-  const [account, setAccount] = useState(null); 
+function Home(props) {
   const [profiles, setProfiles] = useState([]);
   const [posts, setPosts] = useState([]);
-
-  async function signIn() {
-    if(window.ethereum){
-        const accounts = await window.ethereum.request({
-          method : "eth_requestAccounts"
-        });
-        setAccount(accounts[0]);
-      }
-      else{
-        alert("Kindly install your wallet extension!!");
-      }
-  }
 
   async function getRecommendedProfiles() {
     const response = await urlClient
@@ -76,21 +63,12 @@ function Home() {
       <Box width="100%" backgroundColor="rgba(5, 32, 64, 28)">
         <Box display="flex" justifyContent="space-between" alignItems="center" width="55%" margin="auto" color="white" padding="10px 0">
         <Image alt="Green Web Symbol" src="/4.png" width="100px" height="100px" marginLeft='-190px' />
-          <Box marginLeft='-6rem'>
+          <Box marginLeft='-21rem'>
             <Box fontFamily="DM Serif Display" fontSize="50px"> GREEN WEB </Box>
             <Box fontSize="20px"> A Decentralized SocialMedia </Box> 
           </Box>
-          {account ? (
-            <Box backgroundColor="#000" padding="15px" borderRadius="6px">
-              Connected
-            </Box>
-          ) : (
-            <Button onClick={signIn} color="rgba(5,32,64)" _hover={{ backgroundColor: "#808080" }}>
-              Connect Wallet
-            </Button>
-          )}
           <Box>
-            <ProfilePage/>
+            <ProfilePage setAccount={props.setAccount}/>
             <h2 style={{marginLeft: "1.4rem"}}>PROFILE</h2>
           </Box>
         </Box>

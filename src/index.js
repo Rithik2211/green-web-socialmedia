@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
-import Home from "./Home";
+import RouteTab from "./routePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <Home />
+      <RouteTab/>
     </ChakraProvider>
   </React.StrictMode>
 );

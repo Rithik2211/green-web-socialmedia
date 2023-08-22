@@ -19,3 +19,19 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+
+.login {
+  background: url("./assets/greenImg1.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.faucetUI{
+  background: url("./assets/gadientImage-2.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
