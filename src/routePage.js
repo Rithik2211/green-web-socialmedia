@@ -6,6 +6,7 @@ import ErrorPage from './profileDrawer/404Error';
 import Home from './Home';
 import LoginPage from './loginPage';
 import NftStore from './profileDrawer/nftStore';
+import NftGame from './profileDrawer/NftGame';
 
 const RouteTab = () => {
     return (
@@ -17,7 +18,8 @@ const RouteTab = () => {
                     <Route path='/Post' element={<Home/>}></Route>
                     <Route path='/Profile/Faucet' element={<GreenFaucetUi/>}></Route>
                     <Route path='/ErrorPage' element={<ErrorPage/>}></Route> 
-                    <Route path='/Profile/NFTStore' element={<NftStore/>}></Route> 
+                    <Route path='/Profile/NFTStore' element={<NftStore/>}></Route>
+                    <Route path='/Profile/NFTGame' element={<NftGame/>}></Route> 
                 </Routes>
             </Router>
         </div>

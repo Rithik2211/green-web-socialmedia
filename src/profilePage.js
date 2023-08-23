@@ -16,7 +16,7 @@ function ProfilePage(props) {
             <DrawerContent>
                 <DrawerHeader borderBottomWidth='1px'>WELCOME USER !!</DrawerHeader>
                 <DrawerBody>
-                        <div style={{padding: "1rem"}}> GREEN WEB NFT TOKEN </div>
+                        <Button variant="contained" padding="1rem"><Link to='/Profile/NFTGame'> NFT GAME </Link></Button>
                         <Divider orientation='horizontal' />
                         <Button variant="contained" padding="1rem"><Link to='/Profile/Faucet'> GREEN WEB FAUCET </Link></Button>
                         <Divider orientation='horizontal' />
