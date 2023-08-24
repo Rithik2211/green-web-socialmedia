@@ -22,6 +22,8 @@ function ProfilePage(props) {
                         <Divider orientation='horizontal' />
                         <Button variant="contained" padding="1rem"> <Link to='/Profile/NFTStore'> NFT SHOW CASE  </Link></Button>
                         <Divider orientation='horizontal' />
+                        <Button variant="contained" padding="1rem"> <Link to='/Profile/CroudFunding'> WEB3 CROUD FUNDING  </Link></Button>
+                        <Divider orientation='horizontal' />
                     <Button marginTop="21rem" marginLeft="2rem" onClick={disConnectWallet}  _hover={{ backgroundColor: "#e60000" }}><Link to='/'>  DISCONNECT WALLET  </Link></Button>
                 </DrawerBody>
             </DrawerContent>

@@ -7,6 +7,7 @@ import Home from './Home';
 import LoginPage from './loginPage';
 import NftStore from './profileDrawer/nftStore';
 import NftGame from './profileDrawer/NftGame';
+import CroudFunding from './profileDrawer/croudFunding';
 
 const RouteTab = () => {
     return (
@@ -19,7 +20,8 @@ const RouteTab = () => {
                     <Route path='/Profile/Faucet' element={<GreenFaucetUi/>}></Route>
                     <Route path='/ErrorPage' element={<ErrorPage/>}></Route> 
                     <Route path='/Profile/NFTStore' element={<NftStore/>}></Route>
-                    <Route path='/Profile/NFTGame' element={<NftGame/>}></Route> 
+                    <Route path='/Profile/NFTGame' element={<NftGame/>}></Route>
+                    <Route path='/Profile/CroudFunding' element={<CroudFunding/>}></Route>  
                 </Routes>
             </Router>
         </div>

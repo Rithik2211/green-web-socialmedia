@@ -17,6 +17,7 @@ const LoginPage = ({ setAccount }) => {
   return (
     <div  className="login" style={{ minHeight: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}} >
       <div>
+        <h1 style={{ fontSize: "2rem", fontWeight: "bold", color: "black", marginLeft: "29rem", marginBottom:"2rem" }}>GREEN WEB</h1>
         <h1 style={{ fontSize: "2rem", fontWeight: "bold", color: "black" }}>
           "Surf the web, save the planet. Embrace a greener digital footprint today!!"
         </h1> <br />

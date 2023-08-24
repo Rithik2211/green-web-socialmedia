@@ -35,3 +35,25 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+
+.nftStore{
+  text-align: center;
+  padding: 1rem;
+  background: url("./assets/vivid-blurred.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.nftGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+.nftImage{
+  width: 25rem;
+  height: 25rem;
+  padding: 3rem;
+}
